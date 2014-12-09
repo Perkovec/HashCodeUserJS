@@ -7,8 +7,8 @@
         lastOpened: "0",
         fontSize: '14px',
         settings: "{}",
-        aceCDN: "http://raw.github.com/ajaxorg/ace-builds/master/src-noconflict/",
-        jslintCDN: 'http://raw.github.com/douglascrockford/JSLint/master/'
+        aceCDN: "http://d1n0x3qji82z53.cloudfront.net/src-min-noconflict/",
+        jslintCDN: 'http://jslint.com/'
     },
     exports: [
         {name:'scripts', type:'hidden'},
@@ -85,7 +85,7 @@
         script1.src= settings.aceCDN+'ace.js';
         document.getElementsByTagName('head')[0].appendChild(script1);
         var script2= document.createElement("script");
-        script2.src= settings.jslintCDN+'jslint.js';
+        script2.src= settings.jslintCDN+'webjslint.js';
         document.getElementsByTagName('head')[0].appendChild(script2);
         
         var editor; // глобалим
